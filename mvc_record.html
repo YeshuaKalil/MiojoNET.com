@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="mvc_main.css">
+<title>Miojo VS Cup Noodles</title>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="mvc_home.html">
+              <img id="logoimg" src="imagens/logo_provisoria.jpeg">
+            </a>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="mvc_home.html">Início</a></li>
+                <li><a href="mvc_game.html">Miojo vs Cup Noodles</a></li>
+                <li><a href="mvc_lore.html">História</a></li>
+                <li><a href="mvc_record.html">Recordações</a></li>
+                <li><a href="mvc_about.html">Sobre nós</a></li>
+                <li><a href="mvc_profile.html">Perfil</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="section">
+        <div id="optRecord">
+           <button id="Geral" class="Geral notselected" name="geral" onclick="PressedRed('Geral')">Geral</button>
+           <button id="Pessoal" class="Pessoal" name="pessoal" onclick="PressedRed('Pessoal')">Pessoal</button>
+        </div>
+        <div id="addrecord">
+        </div>
+        <div id="allrecords">
+
+          <!--<div class="recordsc">
+              <a href="mvc_recordedit.html"><img class="scimg" src="record_place.svg"></a>
+              <p class="title">Recordação Nome</p>
+              <div class="descRecord">
+                 <button class="gostei" onclick="alert('Você gostou dessa recordação.')">???❤️</button><p class="text desc">NomeUsuário</p>
+              </div>
+          </div>-->
+
+        </div>
+    </div>
+<script>
+function PressedRed(pressed) {
+  var allrecords = document.getElementById("allrecords");
+  var addrecord = document.getElementById("addrecord");
+  if (pressed == "Geral"){
+  addrecord.innerHTML = '';
+  allrecords.innerHTML = '';
+}
+ else {
+   addrecord.innerHTML = '<a href="mvc_edit.html"><div class="add"><p>+ Adicionar recordação</p></div></a>';
+   allrecords.innerHTML = '';
+}
+  var actual = document.getElementsByClassName("notselected");
+  actual[0].classList.remove("notselected")
+  var element = document.getElementById(pressed);
+  element.classList.add("notselected");
+}
+</script>
+    <div id="footer">
+      <p>Não filiado a marca Nissin</p>
+      <p>Site desenvolvido por Ricardo Yeshua Cavalcante Kalil e Lucas de Carvalho Araújo Domingos</p>
+    </div>
+</body>
+</html>

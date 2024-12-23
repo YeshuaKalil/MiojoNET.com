@@ -1,0 +1,289 @@
+#logo{
+    background-color: #ffdd79;
+    width: 100%;
+    display: block;
+    padding: 0 auto;
+}
+#logoimg{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+body{
+    margin: 0   ;
+    background-color: #ff7043;
+}
+#nav { 
+    background-color: #ffab40; 
+} 
+#nav ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    text-align: center; 
+} 
+#nav ul li { 
+    display: inline; 
+} 
+#nav ul li a { 
+    display: inline-block; 
+    padding: 15px 20px; 
+    color: #333; 
+    text-decoration: none; 
+} 
+#nav ul li a:hover{ 
+    background-color: #ff7043; 
+}#section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #faf3e0; 
+}
+
+#about, #game, #login, #refer {
+    width: 80%;
+    background-color: #fff;
+    border: 2px solid #ffdd79;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+#game a button {
+    background-color: #ffdd79;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#game a button:hover {
+    background-color: #ff7043;
+}
+#record {
+    /*Aparentemente, usar apenas text-align: justify; não funciona. Vou ver se tem algo de errado 
+com esse código, mas até lá está servindo seu propósito.*/
+    resize: none;
+    text-align: justify;
+    white-space: pre-line;
+    -moz-text-align-last: left;
+    text-align-last: left;
+    width: calc(9 / 12 * 100%);
+    margin: 15% auto;
+    height: calc(100vw * 0.36);
+    /*Por enquanto, está funcionando responsivamente. */
+    background-color: transparent;
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;
+    font-size: calc(12px + 1.5vw);
+    color: brown;
+    font-family: "Brush Script MT" , cursive;
+    border: 0px;
+    resize: none;
+}
+
+#record:focus {
+    outline: none;
+    border: none;
+}
+
+#record_place {
+    background-image: url("imagens/record_place.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 0;
+    padding-bottom: 60.1%; 
+    border: 2px solid #ffdd79;
+    border-radius: 10px;
+    text-align: center;
+}
+#jogo {
+    width: 40%;
+    height: calc(100vw * 0.287);
+    border: 2px solid #ffdd79;
+    border-radius: 10px;
+    
+}
+@media only screen and (max-width: 450px) {
+  #record_place {
+    width: 100%;
+    padding-bottom: 75.12%; 
+}
+  #jogo {
+    width: 100%;
+    height: calc(100vw * 0.287 * 2.5);
+}
+}
+
+#record::-webkit-scrollbar {
+width: 14px;
+}
+/*#record::-webkit-scrollbar-track {
+
+}*/
+#record::-webkit-scrollbar-thumb {
+    background-color: rgba(88, 57, 39, 0.4);
+    border: 4px solid transparent;
+    border-radius: 5px;
+    background-clip: content-box;
+}
+#record::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(88, 57, 39, 0.6);
+}
+
+#salvar {
+    margin: 20px auto;
+    background-color: #ffdd79;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#salvar:hover {
+    background-color: #ff7043;
+}
+#footer{
+    background-color: #ff7043;
+}
+#optRecord {
+   background-color: rgb(222, 31, 24);
+   border-radius: 6px;
+   font-size: 0;
+}
+.Pessoal, .Geral {
+   font-size: 15px;
+   color: #333;
+   background-color: orange;
+   border: 2px solid rgb(202, 11, 4);
+   display: inline-block;
+   padding: 5px 10px;
+}
+.Pessoal {
+   border-radius: 0px 6px 6px 0px;
+}
+.Geral {
+   border-radius: 6px 0px 0px 6px;
+}
+.notselected {
+  background-color: rgb(222, 31, 24);
+}
+
+#allrecords {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.recordsc {
+  display: inline-block;
+  background-color: #fff;
+  border: 2px solid #ffdd79;
+  border-radius: 10px;
+  margin: 20px 20px;
+  padding: 20px;
+}
+.gostei, .desc {
+  display: inline-block;
+  margin: 0;
+}
+.gostei {
+  float:left;
+  color: red;
+  background-color: transparent;
+  border-color: transparent;
+}
+.desc {
+  float:right;
+}
+.scimg {
+  width: 20vw;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ffdd79;
+  border-radius: 10px;
+}
+
+#loginP input, #inscricaoP input {
+  float: right;
+  width: 30vw;
+  border: 2px solid #ffdd79;
+  border-radius: 6px;
+}
+
+#addrecord a {
+  text-decoration: none;
+}
+.add {
+  font-size: 20px;
+  color: rgb(132, 0, 0);
+  background-color: rgb(222, 31, 24);
+  border: 2px solid rgb(202, 11, 4);
+  width: 100%;
+  border-radius: 2px;
+}
+.add p {
+  margin: 5px 0;
+}
+#addrecord {
+  display: block;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 1%;
+  text-align: center;
+}
+
+.lore {
+  display: block;
+  margin-bottom: 10%;
+}
+.left {
+  text-align: left;
+  float: left;
+}
+.right {
+  text-align: right;
+  float: right;
+}
+.lore.left img {
+  width: 20%;
+  float: right;
+}
+.lore.right img {
+  width: 20%;
+  float: left;
+}
+.loret {
+  display: block;
+  max-width: 65%;
+  float: right;
+}
+.left .loret {
+  float:left;
+}

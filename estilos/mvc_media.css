@@ -1,0 +1,57 @@
+/*Responsividade*/
+@media only screen and (max-width: 900px) {
+    .lorespace {
+      display: none;
+    }
+    .loretextcontainer, .loretext, .loreimg{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      float: none;
+    }
+    .loreimg{
+      width: 80%;
+  
+    }
+    .loretextcontainer{
+      margin-top: 5%;
+      height: auto;
+    }
+  
+    #sectionRow {
+      flex-direction: column;
+    }
+    #mot {
+      display: none;
+    }
+    #controles {
+      width: 80%;
+    }
+
+}
+  
+@media only screen and (max-width: 450px) {
+    #record_place {
+      width: 100%;
+      padding-bottom: 75.12%; 
+  }
+    #jogo {
+      width: 80%;
+      height: calc(100vw * 0.287 * 2.8);
+  }
+}
+  
+@media only screen and (max-width: 750px) {
+    .leftP, .rightP {
+      width: 100%;
+    }
+}
+  
+@media only screen and (max-width: 550px) {
+    .belowP .btn {
+      width: 100%;
+      text-align: center;
+    }
+}
+  
+  /*_______________*/

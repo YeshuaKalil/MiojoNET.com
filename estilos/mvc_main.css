@@ -1,0 +1,178 @@
+/*Fonts*/
+
+@font-face {
+  font-family: mvc_text1;
+  src: url(mvc_text1.ttf);
+}
+
+@font-face {
+  font-family: mvc_text2;
+  src: url(mvc_text2.ttf);
+}
+
+/*_____*/
+
+/*Estilos de Layout*/
+.left {
+  text-align: left;
+  float: left;
+}
+.right {
+  text-align: right;
+  float: right;
+}
+
+.center {
+  text-align: center;
+}
+
+/*_______*/
+
+
+/*Header e Navegação*/
+#logo{
+    background-color: #ffdd79;
+    width: 100%;
+    display: block;
+    padding: 0 auto;
+}
+#logoimg{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+body{
+    margin: 0   ;
+    background-color: #ff7043;
+}
+#nav { 
+    background-color: #ffab40; 
+} 
+#nav ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    text-align: center; 
+} 
+#nav ul li { 
+    display: inline; 
+} 
+#nav ul li a { 
+    display: inline-block; 
+    padding: 15px 20px; 
+    color: #333; 
+    text-decoration: none; 
+} 
+#nav ul li a:hover{ 
+    background-color: #ff7043; 
+}
+
+.imgP {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  border:#333 2px solid;
+  border-radius: 50%;
+}
+/*________________*/
+
+/*Estilos gerais*/
+#footer{
+  background-color: #ff7043;
+  margin-left: 2%;
+}
+
+#section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #faf3e0; 
+}
+
+
+.title {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #ff7043;
+    margin-bottom: 10px;
+    font-family: mvc_text2, sans-serif;
+}
+.btn {
+  background-color: #ffdd79;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 8px;
+}
+
+.btn:hover {
+  background-color: #ff7043;
+}
+
+body .btn, body {
+    font-size: 0.8rem;
+    color: #333;
+    line-height: 1.5;
+    font-family: mvc_text1, sans-serif;
+}
+/*______________*/
+
+/*Caixa de conteúdo geral*/
+#about, #game, #login, #refer, #profile_box {
+  width: 80%;
+  background-color: #fff;
+  border: 2px solid #ffdd79;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+
+}
+/*_______________*/
+
+/*Área do Login*/
+
+.loginField {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+#loginbox {
+  width: 50%;
+  background-color: #fff;
+  border: 2px solid #ffdd79;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+
+}
+
+.loginField .input {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 2px solid #ffdd79;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+/*______________*/
+
+
+
+/*Sobre nós*/
+.about_us {
+  resize: none;
+  text-align: justify; 
+  text-indent: 2%;
+}
+
+.author {
+  text-align: right;
+}
+/*__________*/
+
+

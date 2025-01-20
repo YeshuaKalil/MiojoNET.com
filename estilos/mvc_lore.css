@@ -1,0 +1,55 @@
+/*Página da História*/
+
+.lorecontainer {
+    display: block; 
+    width: 90%; 
+    margin: 0 auto;
+  }
+  
+  .loretextcontainer {
+    width: 60%; 
+    height: 49.5vh; 
+    line-height: 49.5vh;
+  }
+  
+  .loretext {
+    display: inline-block; 
+    vertical-align: middle; 
+    line-height: normal;
+    border-bottom: 4px dotted orange;
+  }
+  
+  .lorespace {
+    display: inline-block; 
+    width:10%;
+    height: 49.5vh;
+  }
+  
+  .loreimg {  
+    width: 30%; 
+    height: 49.5vh;
+  }
+  
+  .loreimg1 {
+    background: url('../imagens/loreintro.svg') no-repeat center center; 
+    background-size: contain;
+  }
+  
+  .loreimg2 {
+    background: url('../imagens/general.png') no-repeat center center;
+    background-size: contain; 
+    scale: 1.09;
+  }
+  
+  .loreimg3 {
+    background: url('../imagens/bolonhesa.png') no-repeat center center; 
+    background-size: contain;
+    scale: 1.5;
+  }
+  
+  .loreimg4 {
+    background: url('../imagens/panela.svg') no-repeat center center; 
+    background-size: contain;
+    scale: 1.5;
+  }
+  /*_________________*/

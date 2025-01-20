@@ -1,0 +1,97 @@
+/*Filtro da aba Recordações*/
+#optRecord {
+    background-color: rgb(222, 31, 24);
+    border-radius: 6px;
+    font-size: 0;
+  }
+  .Pessoal, .Geral {
+     font-size: 15px;
+     color: #333;
+     background-color: orange;
+     border: 2px solid rgb(202, 11, 4);
+     display: inline-block;
+     padding: 5px 10px;
+     cursor: pointer;
+  }
+  .Pessoal {
+     border-radius: 0px 6px 6px 0px;
+  }
+  .Geral {
+     border-radius: 6px 0px 0px 6px;
+  }
+  .notselected {
+    background-color: rgb(222, 31, 24);
+    color: white;
+  }
+  /*_________________________*/
+  
+  /*Capa da Recordação*/
+  #allrecords {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, max-content));
+  }
+  .recordsc {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #ffdd79;
+    border-radius: 10px;
+    margin: 20px 20px;
+    padding: 20px;
+  }
+  .gostei, .desc {
+    display: inline-block;
+    margin: 0;
+  } 
+  .gostei {
+    float:left;
+    color: red;
+    background-color: transparent;
+    border-color: transparent;
+    height: 1.5rem;
+  }
+  .desc {
+    float:right;
+    font-size: 0.6rem;
+  }
+  .scimg {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ffdd79;
+    border-radius: 10px;
+  }
+  /*___________________*/
+  
+  /*Botão de adicionar recordação*/
+  #addrecord a {
+    text-decoration: none;
+  }
+  .add {
+    font-size: 16px;
+    color: white;
+    background-color: rgb(222, 31, 24);
+    border: 4px solid rgb(202, 11, 4);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 6px;
+    
+  }
+  .add p {
+    margin: 5px 0;
+  }
+  #addrecord {
+    display: block;
+    width: 80%;
+    padding: 0.6% 0;
+    margin: 1% 0;
+    text-align: center;
+    border-bottom: 4px solid rgb(202, 11, 4);
+  }
+  /*____________________________*/

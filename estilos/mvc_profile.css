@@ -1,0 +1,46 @@
+/*Área do Perfil*/
+
+.leftP {
+    float: left;
+    word-wrap: break-word;
+    width: 50%;
+    padding-bottom: 2%;
+  }
+  
+  .leftP .title {
+    font-size: 3.4vw;
+  }
+  
+  .rightP {
+    float: right;
+    width: 50%;
+    margin-top: 5%;
+  }
+  .rightP p {
+    text-align: center;
+  }
+  
+  .rightP img {
+    cursor: pointer;
+  }
+  
+  .rightP input {
+    display: none;
+  }
+  
+  .imgP.view {
+    display: block;
+    margin: 0 auto;
+    width: 22vw;
+    height: 22vw;
+  }
+  
+  
+  
+  .belowP {
+    clear: both;
+    padding-top: 5%;
+  }
+  
+  
+  /*_____________*/

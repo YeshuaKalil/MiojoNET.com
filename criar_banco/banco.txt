@@ -1,0 +1,6 @@
+Quanto ao BD:
+
+O arquivo 'mvc_banco' deve ser importado sobre um banco no PHPMyAdmin para carregar todos os dados prévios da página.
+
+- Criação das tabelas.
+- Criação do usuário Admin.
